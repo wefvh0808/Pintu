@@ -129,16 +129,16 @@ public class MainActivity extends AppCompatActivity {
         GameInfo blankInfo = (GameInfo) mBlankImageView.getTag();
 
         if (ivInfo.bottomY == blankInfo.bottomY && ivInfo.rightX == blankInfo.leftX) {
-            // 左边
+            // 左邊
             return true;
         } else if (ivInfo.bottomY == blankInfo.bottomY && ivInfo.leftX == blankInfo.rightX) {
-            // 右边
+            // 右邊
             return true;
         } else if (ivInfo.leftX == blankInfo.leftX && ivInfo.bottomY == blankInfo.topY) {
-            // 上边
+            // 上邊
             return true;
         } else if (ivInfo.leftX == blankInfo.leftX && ivInfo.topY == blankInfo.bottomY) {
-            // 下边
+            // 下邊
             return true;
         }
 
@@ -198,10 +198,10 @@ public class MainActivity extends AppCompatActivity {
 
 
         if (ivInfo.bottomY == blankInfo.bottomY) {
-            // 左边or右边
+            // 左邊or右邊
             anim = new TranslateAnimation(0, blankInfo.leftX - ivInfo.leftX, 0, 0);
         } else if (ivInfo.leftX == blankInfo.leftX) {
-            // 上边or下边
+            // 上边邊or下邊
             anim = new TranslateAnimation(0, 0, 0, blankInfo.topY - ivInfo.topY);
         }
 
